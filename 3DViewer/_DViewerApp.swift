@@ -11,7 +11,7 @@ import SwiftUI
 struct _DViewerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ModelView()
         }
     }
 }

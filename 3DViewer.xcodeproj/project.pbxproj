@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1141016F2C881D9900768D2B /* _DViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141016E2C881D9900768D2B /* _DViewerApp.swift */; };
-		114101712C881D9900768D2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114101702C881D9900768D2B /* ContentView.swift */; };
 		114101732C881D9A00768D2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114101722C881D9A00768D2B /* Assets.xcassets */; };
-		114101772C881D9A00768D2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114101762C881D9A00768D2B /* Preview Assets.xcassets */; };
 		114101812C881D9A00768D2B /* _DViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114101802C881D9A00768D2B /* _DViewerTests.swift */; };
 		1141018B2C881D9A00768D2B /* _DViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141018A2C881D9A00768D2B /* _DViewerUITests.swift */; };
 		1141018D2C881D9A00768D2B /* _DViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141018C2C881D9A00768D2B /* _DViewerUITestsLaunchTests.swift */; };
+		1141019B2C881EA800768D2B /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141019A2C881EA800768D2B /* ModelData.swift */; };
+		1141019F2C881ED400768D2B /* ModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141019E2C881ED400768D2B /* ModelViewModel.swift */; };
+		114101A22C881F0000768D2B /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114101A12C881F0000768D2B /* ModelView.swift */; };
+		114101A52C881FA200768D2B /* DocumentPickerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114101A42C881FA200768D2B /* DocumentPickerHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,15 +38,17 @@
 /* Begin PBXFileReference section */
 		1141016B2C881D9900768D2B /* 3DViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1141016E2C881D9900768D2B /* _DViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DViewerApp.swift; sourceTree = "<group>"; };
-		114101702C881D9900768D2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		114101722C881D9A00768D2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		114101742C881D9A00768D2B /* _DViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _DViewer.entitlements; sourceTree = "<group>"; };
-		114101762C881D9A00768D2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1141017C2C881D9A00768D2B /* 3DViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		114101802C881D9A00768D2B /* _DViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DViewerTests.swift; sourceTree = "<group>"; };
 		114101862C881D9A00768D2B /* 3DViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1141018A2C881D9A00768D2B /* _DViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DViewerUITests.swift; sourceTree = "<group>"; };
 		1141018C2C881D9A00768D2B /* _DViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _DViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1141019A2C881EA800768D2B /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		1141019E2C881ED400768D2B /* ModelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewModel.swift; sourceTree = "<group>"; };
+		114101A12C881F0000768D2B /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
+		114101A42C881FA200768D2B /* DocumentPickerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPickerHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,21 +99,15 @@
 		1141016D2C881D9900768D2B /* 3DViewer */ = {
 			isa = PBXGroup;
 			children = (
+				114101A32C881F8600768D2B /* Helpers */,
+				1141019D2C881EB800768D2B /* View */,
+				1141019C2C881EAE00768D2B /* ViewModel */,
+				114101992C881E5A00768D2B /* Model */,
 				1141016E2C881D9900768D2B /* _DViewerApp.swift */,
-				114101702C881D9900768D2B /* ContentView.swift */,
 				114101722C881D9A00768D2B /* Assets.xcassets */,
 				114101742C881D9A00768D2B /* _DViewer.entitlements */,
-				114101752C881D9A00768D2B /* Preview Content */,
 			);
 			path = 3DViewer;
-			sourceTree = "<group>";
-		};
-		114101752C881D9A00768D2B /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				114101762C881D9A00768D2B /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		1141017F2C881D9A00768D2B /* 3DViewerTests */ = {
@@ -127,6 +125,38 @@
 				1141018C2C881D9A00768D2B /* _DViewerUITestsLaunchTests.swift */,
 			);
 			path = 3DViewerUITests;
+			sourceTree = "<group>";
+		};
+		114101992C881E5A00768D2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1141019A2C881EA800768D2B /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1141019C2C881EAE00768D2B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1141019E2C881ED400768D2B /* ModelViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1141019D2C881EB800768D2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				114101A12C881F0000768D2B /* ModelView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		114101A32C881F8600768D2B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				114101A42C881FA200768D2B /* DocumentPickerHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +263,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				114101772C881D9A00768D2B /* Preview Assets.xcassets in Resources */,
 				114101732C881D9A00768D2B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				114101712C881D9900768D2B /* ContentView.swift in Sources */,
+				114101A22C881F0000768D2B /* ModelView.swift in Sources */,
+				1141019F2C881ED400768D2B /* ModelViewModel.swift in Sources */,
 				1141016F2C881D9900768D2B /* _DViewerApp.swift in Sources */,
+				114101A52C881FA200768D2B /* DocumentPickerHelper.swift in Sources */,
+				1141019B2C881EA800768D2B /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +451,6 @@
 				CODE_SIGN_ENTITLEMENTS = 3DViewer/_DViewer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"3DViewer/Preview Content\"";
 				DEVELOPMENT_TEAM = 9RT599643X;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -457,7 +488,6 @@
 				CODE_SIGN_ENTITLEMENTS = 3DViewer/_DViewer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"3DViewer/Preview Content\"";
 				DEVELOPMENT_TEAM = 9RT599643X;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
