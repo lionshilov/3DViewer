@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  3DViewer
+
+  Created by Лев Шилов on 04.09.2024.
+  
+*/
+
+"3DViewer" = "3DViewer";
+"Load and view 3D models in OBJ, STL, or FBX formats. Rotate, zoom, and pan the models to explore details from any angle." = "Cargue y vea modelos 3D en formatos OBJ, STL o FBX. Rote, acerque y aleje los modelos para explorar detalles desde cualquier ángulo.";
+"Convert Model" = "Convertir modelo";
+"Load Model" = "Cargar modelo";
+"Select a file type to load." = "Seleccione un tipo de archivo para cargar.";
+"Error: Unable to load supported file types." = "Error: No se pueden cargar los tipos de archivos compatibles.";
+"Choose a format to convert" = "Elija un formato para convertir";
+"Convert to STL" = "Convertir a STL";
+"Convert to OBJ" = "Convertir a OBJ";
+"Convert to PLY" = "Convertir a PLY";
+"Conversion in progress..." = "Conversión en progreso...";
+"Model successfully converted!" = "¡Modelo convertido con éxito!";
+"Share or save model" = "Compartir o guardar modelo";
+"OK" = "OK";
+"Error" = "Error";
+"Welcome to 3DViewer!" = "Welcome to 3DViewer!";
+"Explore the world of 3D models. Load, convert, and enjoy models in various formats." = "Explore the world of 3D models. Load, convert, and enjoy models in various formats.";
