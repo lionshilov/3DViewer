@@ -222,4 +222,3 @@ struct ConversionOptionsView: View {
         }
     }
 }
-
